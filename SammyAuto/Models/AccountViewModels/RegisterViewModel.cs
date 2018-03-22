@@ -23,5 +23,27 @@ namespace SammyAuto.Models.AccountViewModels
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        [Display(Name = "First Name")]
+        public String FirstName { get; set; }
+        [Required]
+        [Display(Name = "Last Name")]
+        public String LastName { get; set; }
+        [Required]
+
+        [Display(Name = "Addres")]
+        public String Address { get; set; }
+        [Required]
+        [Display(Name = "City")]
+        public String City { get; set; }
+        [Required]
+        [Display(Name = "Postal Code")]
+        public String PostalCode { get; set; }
+        [Required]
+        [Display(Name = "Phone Number")]
+        public String PhoneNumber { get; set; }
+
+        // public bool isAdmin { get; set; }
     }
 }
